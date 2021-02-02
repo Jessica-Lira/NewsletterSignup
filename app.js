@@ -37,11 +37,11 @@ app.post("/", function(req, res){
 
 	const jsonData = JSON.stringify(data);
 
-	const url = "https://us2.api.mailchimp.com/3.0/lists/c2bd82c983";
+	const url = "insertAPIsite";
 
 	const options = {
 		method: "POST",
-		auth: "jlira:dcab393c21419d44c15e02a4e83c3c66-us2"
+		auth: "inserthere"
 	}
 
 	const request = https.request(url, options, function(response){
@@ -71,13 +71,3 @@ app.post("/failure", function(req,res){
 app.listen(process.env.PORT || 3000, function(){
 	console.log("Server is running");
 })
-
-
-//API Key MailChimp
-// dcab393c21419d44c15e02a4e83c3c66-us2
-
-//my audience id
-// c2bd82c983
-
-//site 
-// https://dry-temple-69101.herokuapp.com/
